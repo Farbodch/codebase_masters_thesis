@@ -426,8 +426,8 @@ def _build_K_sob_vectorized(
     chunk_S=None               
 ):
 
-    if kernel_U_type != 'sobolev':
-        raise ValueError(f"Invalid Kernel: {kernel_U_type}!")
+    # if kernel_U_type != 'sobolev':
+    #     raise ValueError(f"Invalid Kernel: {kernel_U_type}!")
 
 
     if not isinstance(u_samples_arr_to_kernel, np.ndarray) or u_samples_arr_to_kernel.ndim != 3:

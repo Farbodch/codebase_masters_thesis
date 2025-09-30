@@ -1,7 +1,6 @@
 name: thesis-repro
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.10.14
   - numpy=2.0.1
@@ -9,14 +8,17 @@ dependencies:
   - matplotlib=3.9.2
   - python-dateutil=2.9.0
 
-  - gmsh=4.13.1
-  - meshio=5.3.5
+  - pip
+  - pip:
+      - gmsh==4.13.1
+      - meshio==5.3.5
   - fenics
 
+  - jupyterlab
   - jupyter-dash=0.4.2
   - jupyter_client=8.6.2
   - jupyter_core=5.7.2
-  - jupyterlab-widgets=3.0.13
+  - jupyterlab_widgets=3.0.13 
   - ipykernel=6.29.5
   - ipympl=0.9.6
   - ipython=8.30.0

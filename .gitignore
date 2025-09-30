@@ -1,3 +1,6 @@
 data
 figs
 fig
+.ipynb_checkpoints/
+kbsa/__pycache__/
+utils/__pycache__/
